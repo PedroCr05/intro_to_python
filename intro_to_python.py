@@ -35,3 +35,14 @@ my_number = -5
 print(my_number)
 
 # We can redeclare/reassign variables over and over again just like in JS
+
+"""
+You know how we do not have let's or const's here?
+Well the thing is python doesn't run like that.
+Although, there is an exception. When someone has their function in CAPS.
+It is considered as a CONST while regular casing is let
+"""
+
+# This here is considered as a const and other devs will understand to not reassign this value for the variable.
+# This is also called SCREAMING_SNAKE_CASE
+MY_FAVORITE_NUMBER = 5 
