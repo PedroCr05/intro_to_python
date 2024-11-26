@@ -158,3 +158,81 @@ num *= 3
 
 # This is just like JS although incrementing like in JS does not work in python
 # num++ does not exist.
+
+my_string = "A double-quoted string."
+your_string = 'A single quoted string.'
+
+multiline_string = """This is my string that goes on multiple lines for whatever reason."""
+a_new_multiline_string = '''Now this is the other multiline type for whatever reason.'''
+# Fun fact. Multiline comments can actually be used as strings.
+
+little_string = "bad"
+medium_string = "super"
+
+long_string = medium_string + little_string
+print(long_string)
+
+"""
+Just like in JS we can concatenate the same data types together. 
+Just not when it's two different data types. 
+Then you have to predefine it.
+"""
+
+today = "26 of November"
+year = 2024
+state = "Arkansas"
+isItSnowing = False
+
+print_me = f"Today is {today}, {year}. Currently, I live at {state} and is there snow here? {isItSnowing}."
+
+print(print_me)
+
+"""
+As you remember from reading comments earlier.
+You saw how we used this syntax " ${`To put our ${variables} inside here, so we can call our ${functions}.`} "
+
+This is the same thing as what we used here for python's print_me variable.
+
+We instead call our syntax with " f"Then our {variables} are in curly braces. Just that {easy}!" || f'As well {single} quotes work {too}!' "
+
+"""
+
+print("ace of spades".split(" "))
+
+# .split("method") works just as the same as in JS
+'''
+print("abcd".split(""))
+Unforantuely .split("empty") like in JS it would work. Though in python that does not work and it throws an error.
+'''
+
+print(list("ABCD"))
+# In order to list strings like this example: A B C D. You need to use the list("Function")
+
+print("abcd".index("d"))
+# If we think back to JS with dot notation. .index("") is similar to that. Instead of predefining a number from an array like in JS
+# Here you just define the characters that you are looking for.
+
+# print("efgh".index("abcd"))
+# This is what happens when we use index but define something that isn't present: "ValueError: substring not found"
+# The error here is actually a value error
+
+print("abcd".find("e"))
+# .find("") is really handy to have in order to check whether you have something in your string. Basically the inverse of what .index("") does but similar
+print("abcde".find("e"))
+
+print("hey!".upper())
+# This is just like our .upperCase() function from JS. Of course with an uppercase there is lower case.
+print("AM I YELLING? DOES THAT BOTHER YOU??".lower())
+
+print("Then I went to the store, but also I bought an ice cream for me!".replace("I", "you"))
+# .replace("") seems really nice to know! probably use this in the future. Who knows really.
+
+print("eggs" in "green eggs and ham.")
+'''
+in here is a new function. This is basically .find(""). Instead we are just looking for whether our input is present in the string.
+Then our output will retain a boolean statement. If it is present. It's True, If it does not exist it will return False.
+'''
+
+print(len("Cheeseburger"))
+# Funny thing is that .length("") has always been a array call back function. In python's case. It works for all data types and will return a int output
+# This case the output: 12
