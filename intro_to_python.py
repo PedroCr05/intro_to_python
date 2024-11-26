@@ -114,3 +114,47 @@ def main():
     print("Hello there! My name is " + first_name + " and I am " + str(age_num) + " years old." )
 
 main()
+
+#/=================================================================/#
+
+def run():
+    pow_num = 10 ** 2
+    add_num = pow_num + 12
+    subtract_num = add_num - 40
+    multi_num = subtract_num * 4
+    div_num = multi_num / 3
+    num_remain = div_num % 13
+
+    print(pow_num, add_num, subtract_num, multi_num, div_num, num_remain)
+
+run()
+
+# Math operators work just exactly as in JS
+
+"""
+HOWEVER! As you know when you run this file. 
+The dividing and modulo (remainder) actually return a float data type.
+"""
+div_num = 100 / 3
+num_remain = div_num % 13
+
+print(type(div_num), type(num_remain))
+
+"""
+See? So what we need to do in order for it to give us a int. we can give the operator the same symbol but instead of once.
+It's done twice.
+"""
+
+div_num = 100 // 3
+# num_remain = div_num %/ 13
+
+# Tried to do some research but modulo does not work like division. This trait only is for division only.
+
+num = num + 1
+# Is actually the same as
+num += 1
+num /= 5
+num *= 3
+
+# This is just like JS although incrementing like in JS does not work in python
+# num++ does not exist.
