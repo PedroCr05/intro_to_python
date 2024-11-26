@@ -75,7 +75,42 @@ Again python unfortunately does not use null or undefined but instead it's used 
 Output? NoneType
 
 Obviously just like JS... there is a document to ALL data types >.> | https://docs.python.org/3/library/stdtypes.html
-Also side note: When using the type(function) only use it once? For some reason my terminal only likes to output the class of 'something' once.
 """
 
+#/=================================================================/#
 
+"""
+Let's get into the juicy bits! Remember how you were able to do this over on JS?
+
+const run () => {
+    let age = 19;
+    let firstName = "Pedro";
+
+    console.log(${`Hello my name is ${firstName} and I am ${age} years old.`});
+}
+
+run();
+
+Yeah that's not possible in python.
+
+def main():
+    age_num = 19
+    first_name = "Pedro"
+
+    print("Hello there! My name is " + first_name + "and I am " + age_num + " years old!")
+
+main()
+
+This throws an error sadly.
+
+In order to do this python is strict on what you want to do.
+If you want a data type be changed into the correct type. We have to pre-define it before hand.
+"""
+
+def main():
+    age_num = 19
+    first_name = "Pedro"
+
+    print("Hello there! My name is " + first_name + " and I am " + str(age_num) + " years old." )
+
+main()
