@@ -46,3 +46,36 @@ It is considered as a CONST while regular casing is let
 # This here is considered as a const and other devs will understand to not reassign this value for the variable.
 # This is also called SCREAMING_SNAKE_CASE
 MY_FAVORITE_NUMBER = 5 
+
+#/=================================================================/#
+
+print(type("Hello World"))
+# This will give an output class of str. Just like how data types work in JS
+
+print(type(25))
+# Output will be a data type of class num
+
+print(type(3.14159))
+"""
+Output will return as a float. Same as JS. All decibels in JS are considered non integers but as floats.
+Same goes for python.
+"""
+
+print(type(False))
+print(type(True))
+"""
+You see something different? Yeah that's right!
+Python actually capitalizes the first letter unlike JS
+"""
+
+print(type(None))
+"""
+This here is what we know that is considered as null and undefined from JS.
+Again python unfortunately does not use null or undefined but instead it's used as None.
+Output? NoneType
+
+Obviously just like JS... there is a document to ALL data types >.> | https://docs.python.org/3/library/stdtypes.html
+Also side note: When using the type(function) only use it once? For some reason my terminal only likes to output the class of 'something' once.
+"""
+
+
